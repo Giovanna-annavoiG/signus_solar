@@ -1,0 +1,703 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+
+/* Botões da NAVBAR azul - topo */
+.header-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.3rem;
+    background-color: #037ad6;
+    padding: 0.9rem 5rem;
+    color: white;
+  }
+  .navbar{
+    position: fixed; /* Fixando a navbar no topo */
+  top: 0; /* Colocando ela no topo da página */
+  left: 0;
+  width: 100%; /* Garantindo que ela ocupe toda a largura */
+  z-index: 10; 
+  }
+  
+  .header-buttons a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  
+  .header-buttons a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Navbar */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    position: relative;
+
+    
+  }
+  
+  /* Logo */
+  .logo {
+    padding-left: 0.8rem;
+    font-size: 2.0rem;
+    font-weight: 500;
+    color: #000;
+  }
+  
+  /* Links de navegação */
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+  }
+  
+  header nav ul li {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #3b3b3b;
+    cursor: pointer;
+  }
+  
+  header nav ul li:hover {
+    color: #037ad6;
+  }
+  
+  /* Ícone e Botão */
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .search-icon {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #005b9f;
+    cursor: pointer;
+  }
+  
+  .search-button {
+    padding: 1rem 1.9rem;
+    background-color: #027cda;
+    color: rgb(222, 244, 247);
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 20px;
+    border-radius: 2rem 2rem 2rem 2rem;
+    font-weight: bolder;
+    cursor: pointer;
+    
+  }
+  
+  .search-button:hover {
+    background-color: #003f73;
+  }
+  main {
+    text-align: center;
+    padding: 0.2rem;
+    padding-bottom: 0.2rem;
+    margin-top: 10rem
+
+  }
+  .main-text{
+    font-size: 2.0rem;
+    font-weight: lighter;
+    line-height: 2.4rem;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;    
+   
+  }
+  /* LINHA LARANJA */
+  .line {
+    height: 0.10rem;
+    background-color: orange;
+    margin: 1rem auto;
+    width: 85%;
+  }
+  
+  main p {
+    margin: 3rem 0;
+  }
+  
+  
+  /* CSS DO LINK DO TEXTO */
+
+  .links {
+    text-align: left; /* Centraliza os links dentro da div */
+
+  }
+  
+  .links h4 {
+    padding-top: 50px;
+    margin-right: 10px;
+    padding-right: 20px;
+    display: inline-block; /* Faz os links ficarem lado a lado */
+    width: 35rem; /* Largura fixa para os links */
+    margin-bottom: 30px; /* Adiciona um espaço abaixo de cada h4 */
+    padding-bottom: 30px;
+    vertical-align: top !important;
+    
+  }
+  
+  .links a {
+    display: block; /* Faz o link ocupar toda a largura do h4 */
+    text-align: center; /* Centraliza o texto dentro do link */
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: rgb(28, 124, 250);
+ 
+  }
+
+
+  .links a:hover {
+    text-decoration: none;
+  }
+
+    section{
+    background-size: cover; /* Faz a imagem cobrir toda a área da seção */
+  background-position: center; /* Centraliza a imagem dentro da seção */
+  background-repeat: no-repeat; /* Impede que a imagem seja repetida */
+  width: 100%; /* A seção ocupa toda a largura disponível */
+  height: 25rem; /* A seção ocupa toda a altura da janela de visualização */
+    overflow: hidden; /* Garante que a imagem não ultrapasse o contêiner */
+
+    /* Centraliza o conteúdo dentro da section */
+  display: flex; /* Usa flexbox para o layout */
+  justify-content: center; /* Alinha horizontalmente ao centro */
+  align-items: center; /* Alinha verticalmente ao centro */
+  text-align: center; /* Centraliza o texto dentro dos elementos */
+}
+
+
+
+/* FORMULARIO */
+/* Section com fundo */
+.banner-form {
+    background-image: url('https://images.ctfassets.net/k6ot5nj1c6f9/ivurfkScDaGqtgfZMySSx/a9fdb168714b06f64e81a8d02efc9bdf/iStock-1349076681__1_.jpg'); /* Imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; 
+    text-align: center; /* Centraliza o texto dentro da section */
+    position: relative;
+    min-height: 90vh; /* Fullscreen */
+    padding: 4rem 2rem;
+    color: white;
+    align-items: center;
+    width: 100%;  /* Garante que a section ocupe 100% da largura */
+  }
+  
+  /* Contêiner do texto à esquerda */
+  .text-container {
+    max-width: 40%;
+    align-self: flex-start;
+    padding-top: 2rem;
+    padding-right: 2rem;
+  }
+  
+  .text-container h2 {
+    font-size: 3rem;
+    text-align: left;
+    line-height: 0.8;
+    font-weight: bolder;
+    margin-bottom: 4rem;
+ 
+  }
+  
+  /* Contêiner do formulário à direita */
+  .form-container {
+    background: rgba(255, 255, 255); 
+    padding: 50px;
+    border-radius: 8px;
+    width: 100%; /* Garante que o formulário ocupe 100% do espaço disponível */
+    max-width: 900px; /* Largura máxima para o formulário */
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-self: flex-start;
+  }
+  
+  .form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .input-group {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .input-group input {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    width: 48%;
+    border: 2px solid #0186eb;
+  }
+  input:focus{
+    border: 2px;
+    border-style: double;
+    border-color: #0186eb;
+  }
+  
+  .input-group input[type="text"], 
+  .input-group input[type="email"], 
+  .input-group input[type="tel"] {
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+    border: 1px solid #037cd8; /* Borda dupla azul */
+    border-radius: 5px;
+    width: 100%;
+    transition: border-color 0.3s ease; /* Transição suave ao mudar a borda */
+  }
+
+    /* Estilo da borda quando o input for focado */
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="tel"]:focus {
+    border: 1px #036dc4; /* Cor da borda ao focar (azul mais escuro) */
+    border-style: double;
+    outline: none; /* Remove o contorno padrão do navegador */
+    }
+
+  .form-container button {
+    padding: 20px;
+    font-size: 16px;
+    background-color: #005b9f;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    border-radius: 2rem 2rem 2rem 2rem;
+    cursor: pointer;
+    width: 30%; /* Ajustando a largura para 1/3 do tamanho do formulário */
+    align-self: flex-start; /* Posicionando o botão à esquerda */
+    font-weight: bolder;
+
+  }
+  
+  .form-container button:hover {
+    background-color: #003f73;
+  }
+  
+  .form-container label {
+    font-size: 16px;
+    color: #747474;
+    align-items: left;
+    font-weight: bold;
+  }
+  input[type="checkbox"] {
+    width: 25px; /* Largura maior */
+    height: 25px; /* Altura maior */
+    vertical-align: middle; /* Alinha verticalmente com o meio do texto */
+  }
+  .check-text{
+    justify-content:left; /* Centraliza horizontalmente */
+    align-items:flex-start; 
+    text-align: left;
+  }
+  .text-check{
+    color: #a3a3a3;
+    font-size: 11px;
+  }
+  
+  .form-container input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+
+
+
+
+
+
+
+/* Estilo da seção */
+.heritage-section {
+    text-align: center;
+    padding: 2rem; /* Adiciona espaço abaixo do título */
+    display: block; /* Garante que o título seja tratado como um bloco */
+    position: relative; /* Para o pseudo-elemento funcionar, se necessário */
+    overflow: visible; /* Garante que o conteúdo não seja cortado */
+}
+
+/* Estilo do título */
+h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #333;
+    
+}
+.home-title {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #333;
+    margin-top: 20rem; /* Garante espaçamento entre os itens anteriores e o novo título */
+}
+
+
+/* Layout dos círculos e textos */
+.heritage-content {
+    display: flex;
+    justify-content: space-evenly; /* Espaçamento uniforme entre os itens */
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+}
+
+/* Cada item dentro da seção */
+.heritage-item {
+    flex: 1; /* Ajusta dinamicamente o tamanho */
+    max-width: 30%; /* Limita o tamanho dos itens */
+    text-align: center;
+    padding-bottom: 1rem; /* Adiciona espaçamento inferior para não cortar o conteúdo abaixo */
+}
+
+/* Estilo do círculo */
+.circle-image {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* Imagem dentro do círculo */
+.circle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Título e texto abaixo dos círculos */
+.heritage-item h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: #000000;
+    font-weight: 500;
+}
+
+.heritage-item p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+/* MAIS UMA SECTION */
+/* Layout do bloco de imagem, texto e botão */
+.home-section{
+    display: block; /* Garante que o título seja tratado como um bloco */
+    position: relative; /* Para o pseudo-elemento funcionar, se necessário */
+    overflow: visible; /* Garante que o conteúdo não seja cortado */
+
+}
+.div-title{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+    
+}
+.image-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; /* Alinha verticalmente a imagem e o texto */
+    gap: 3rem;
+    width: 98%; /* Garante que o layout ocupe toda a largura disponível */
+    
+}
+
+/* Estilo da imagem quadrada */
+.image-text .image {
+    max-width: 500px; /* Define a largura fixa da imagem */
+    height: 360px; /* Define a altura fixa da imagem */
+    margin-bottom: 2rem; /* Espaçamento abaixo da imagem */
+    overflow: hidden;
+    border-radius: 2.5% 0% 0% 2%;
+    margin-left: 50px;
+    
+}
+
+.image-text .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantém a imagem proporcional sem deformar */
+}
+
+/* Estilo do texto */
+.image-text .text {
+    align-items: center;
+    max-width: 60%; /* Limita a largura máxima do texto */
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 70px;
+}
+
+/* Título do texto */
+.image-text .text h3 {
+    font-size: 2.0rem;
+    color: #027cda;
+    margin: 0.5rem 0;
+    font-weight: 500;
+}
+
+/* Subtítulo do texto */
+.image-text .text h4 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+/* Parágrafo do texto */
+.image-text .text p {
+    font-size: 1rem;
+    color: #585858;
+    line-height: 1.6;
+    padding-bottom: 60px;
+}
+
+/* Estilo do botão */
+.image-text .button {
+    padding: 1rem 1.9rem;
+    background-color: #027cda;
+    color: rgb(222, 244, 247);
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 20px;
+    border-radius: 2rem 2rem 2rem 2rem;
+    font-weight: bolder;
+    cursor: pointer;
+    text-decoration: none;
+ 
+}
+.image-text-button .button-wrapper {
+    width: 100%; /* Garante que o wrapper ocupe toda a largura */
+    display: flex;
+    justify-content: center; /* Centraliza o botão */
+    margin-top: 2rem;
+}
+.image-text .button:hover {
+    background-color: #025fa3; /* Cor do botão ao passar o mouse */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* CARD */
+/* Estilo para a seção de cards */
+/* Contêiner da seção de cards */
+.section {
+    padding: 3rem 2rem;
+    margin-top: 4rem; /* Garantir que a seção de cards não se sobreponha à anterior */
+    position: relative;
+}
+
+/* Título da seção */
+.div-title {
+    text-align: center;  /* Alinha o título no centro */
+    margin-bottom: 2rem;  /* Espaçamento entre o título e os cards */
+}
+
+/* Contêiner dos cards */
+.cards-section {
+    display: flex;
+    flex-wrap: wrap;  /* Permite que os cards se ajustem na linha */
+    gap: 2rem;
+    justify-content: center;  /* Alinha os cards ao centro */
+    padding-top: 2rem;  /* Espaçamento entre o título e os cards */
+    margin-top: 2rem;
+}
+
+/* Estilo para os cards */
+.card {
+    width: 20%; /* Largura fixa para os cards */
+    background-color: #f9f9f9;
+    border-radius: 8px 0px 0px 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 2rem; /* Garantir o espaçamento entre os cards */
+    flex-grow: 1;  /* Faz com que os cards cresçam se necessário para ocupar o espaço */
+    min-width: 250px; /* Garante que o card não fique menor do que o necessário */
+}
+
+/* Imagem do card */
+.card-image {
+    width: 100%; /* Faz a imagem ocupar toda a largura do card */
+    height: 350px; /* Altura fixa para as imagens */
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz a imagem cobrir toda a área */
+}
+
+/* Subtítulo e texto do card */
+.card-subtitle {
+    font-size: 1.2rem;
+    color: #757575;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Botão dentro do card */
+.card-button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card-button {
+    padding: 1rem 2rem;
+    background-color: #027cda;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    border-radius: 2rem 2rem 2rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.card-button:hover {
+    background-color: #025fa3;
+}
+
+
+
+
+
+
+
+/* Footer */
+.footer {
+    background-color: #333; /* Fundo cinza escuro */
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .footer-logo img {
+    max-width: 150px; /* Limita o tamanho da logo */
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin: 0.5rem 0;
+  }
+  
+  .footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 400;
+    transition: color 0.3s;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #027cda; /* Cor de destaque */
+  }
+  
+  .footer-contact p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0.5rem 0;
+  }
+  
+  .footer-contact h4 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+  }
+  
+  .footer-social {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .footer-social .social-icon img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .footer-bottom {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #ccc;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+
+  
