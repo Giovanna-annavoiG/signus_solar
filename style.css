@@ -212,11 +212,13 @@
     padding-top: 50px;
     margin-right: 10px;
     display: inline-block; /* Faz os links ficarem lado a lado */
-    width: 23rem; /* Largura fixa para os links */
+    width: 30rem; /* Largura fixa para os links */
     margin-bottom: 1rem; /* Adiciona um espaço abaixo de cada h4 */
     padding-bottom: 30px;
     vertical-align: top !important;
     max-width: 100%;
+      text-align: center; /* Centraliza o texto dentro do link */
+    justify-content: center;
     
   }
   
