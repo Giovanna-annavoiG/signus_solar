@@ -1236,6 +1236,8 @@ align-items: center;
 /* CONTATO US */
 .contat-us h2{
   line-height: 3rem;
+  font-size: 2rem;
+    padding: 2rem 0rem !important;
 }
 
 .contat-us h3{
