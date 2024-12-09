@@ -202,7 +202,7 @@
   /* CSS DO LINK DO TEXTO */
 
   .links {
-    text-align: center; /* Centraliza os links dentro da div */
+    text-align: left; /* Centraliza os links dentro da div */
     display: block;
 
   }
