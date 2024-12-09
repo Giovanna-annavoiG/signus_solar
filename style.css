@@ -492,11 +492,11 @@ h1 {
 /* PASSO A PASSO */
 .step-container {
       display: flex;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       justify-content: center;
       align-items: center;
       padding: 40px 20px;
-      gap: 20px;
+      gap: 15px;
       width: 100% !important;
     }
 
