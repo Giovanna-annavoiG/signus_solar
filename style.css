@@ -921,7 +921,7 @@ input[type="tel"]:focus {
   text-align: center; /* Centraliza o texto */
   padding: 2rem;
   display: block; /* Garante que a section seja um bloco completo */
-  min-height: 100vh;
+  min-height: 100vh !important;
 }
 
 .aprenda-section h1 {
@@ -936,6 +936,7 @@ input[type="tel"]:focus {
   gap: 1rem;
   max-width: 100%; /* Limita a largura total dos cards */
   margin: 0 auto; /* Centraliza horizontalmente */
+  min-height: 100vh;
 }
 
 .aprenda-card {
