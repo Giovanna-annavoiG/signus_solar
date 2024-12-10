@@ -597,7 +597,6 @@ h1 {
     margin-bottom: 2rem; /* Garantir o espaçamento entre os cards */
     flex-grow: 1;  /* Faz com que os cards cresçam se necessário para ocupar o espaço */
     min-width: 250px; /* Garante que o card não fique menor do que o necessário */
-    min-height: 100vh;
 }
 
 /* Imagem do card */
@@ -638,7 +637,6 @@ h1 {
     display: flex;
     justify-content: center;
     padding-top: 2rem;
-    min-height: 100vh;
 
 
 }
